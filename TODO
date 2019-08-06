@@ -1,0 +1,4 @@
+- Create a precommit hook for enforcing good standards in SVG source code (and that adds export line in src/index.js automatically)
+- Integrate ChromaUI or https://github.com/tsuyoshiwada/storybook-chrome-screenshot#react for automated visual regression testing
+- Use a rollup plugin for checking bundle size and - if possible - integrate as part of a test or pre-push hook.
+- Add a custom linter that checks svg files for the absence of `viewBox` and `fill` and the existence of other, disallowed props.

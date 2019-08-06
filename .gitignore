@@ -1,0 +1,9 @@
+node_modules
+coverage
+storybook-static
+dist
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
