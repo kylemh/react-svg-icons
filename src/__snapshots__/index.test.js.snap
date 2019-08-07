@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`@nike/svg-icons Alert renders 1`] = `
+exports[`svg-icons Alert renders 1`] = `
 <svg
   fill="currentColor"
   viewBox="0 0 24 24"
@@ -15,7 +15,7 @@ exports[`@nike/svg-icons Alert renders 1`] = `
 </svg>
 `;
 
-exports[`@nike/svg-icons Flag renders 1`] = `
+exports[`svg-icons Flag renders 1`] = `
 <svg
   fill="currentColor"
   viewBox="0 0 19 32"
@@ -30,7 +30,7 @@ exports[`@nike/svg-icons Flag renders 1`] = `
 </svg>
 `;
 
-exports[`@nike/svg-icons Home renders 1`] = `
+exports[`svg-icons Home renders 1`] = `
 <svg
   fill="currentColor"
   viewBox="0 0 29 32"
@@ -45,7 +45,7 @@ exports[`@nike/svg-icons Home renders 1`] = `
 </svg>
 `;
 
-exports[`@nike/svg-icons MagnifyingGlass renders 1`] = `
+exports[`/svg-icons MagnifyingGlass renders 1`] = `
 <svg
   fill="currentColor"
   viewBox="0 0 25 32"
