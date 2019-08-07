@@ -17,7 +17,7 @@ const createSnapshotTest = (Component) => {
 const iconNames = Object.keys(ProductionBundleIconsMap);
 const icons = Object.values(ProductionBundleIconsMap);
 
-describe('@nike/svg-icons', () => {
+describe('svg-icons', () => {
   beforeEach(cleanup);
 
   icons.forEach((Icon, index) => {
