@@ -11,7 +11,7 @@ Not yet published.
 ### Importing
 
 ```JS
-import { Alert, Basketball } from '@nike/svg-icons';
+import { Alert, Basketball } from 'svg-icons';
 ```
 
 ### Customizing
@@ -19,7 +19,7 @@ import { Alert, Basketball } from '@nike/svg-icons';
 Every component accepts all props that you'd expect an inlined `svg` to accept in a React environment. This includes `className`, `style`, `fill`, `width`, `height`, etc.
 
 ```JS
-import { Alert } from '@nike/svg-icons';
+import { Alert } from 'svg-icons';
 
 <Alert fill="#FFF" width="20px" height="20px" />
 ```
