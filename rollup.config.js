@@ -42,7 +42,7 @@ const generateOutputConfig = ({ format, environment }) => ({
     // Soooooo... Don't use getters and setters 🙏
     propertyReadSideEffects: false,
   },
-  name: '@nike/icons',
+  name: 'svg-icons',
   sourcemap: true,
   globals: { react: 'React', 'react-native': 'ReactNative' },
   exports: 'named',
