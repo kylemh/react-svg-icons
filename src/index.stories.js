@@ -19,8 +19,9 @@ icons.forEach((Icon, index) => {
       <div
         style={{
           display: 'flex',
-          alignItems: 'center',
+          alignItems: 'flex-start',
           justifyContent: 'center',
+          marginTop: '1rem',
 
           // it's in an iframe, hence window.innerHeight
           height: `${window.innerHeight}px`,
