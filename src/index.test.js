@@ -1,5 +1,4 @@
 import React from 'react';
-import { cleanup, render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 
 /*
@@ -18,8 +17,6 @@ const iconNames = Object.keys(ProductionBundleIconsMap);
 const icons = Object.values(ProductionBundleIconsMap);
 
 describe('svg-icons', () => {
-  beforeEach(cleanup);
-
   icons.forEach((Icon, index) => {
     describe(`${iconNames[index]}`, () => {
       it('renders', () => {
