@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 32">
-  <title>Flag</title>
-  <path d="M18.96 4v12.64H2.56V28H0V4h18.96z" />
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 32" fill="currentColor">
+    <title>
+        Flag
+    </title>
+    <path d="M18.96 4v12.64H2.56V28H0V4h18.96z"/>
 </svg>
