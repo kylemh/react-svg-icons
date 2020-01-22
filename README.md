@@ -4,9 +4,11 @@ Little playground to demo a dynamic setup for maintaining iconography as React c
 
 ## Installation
 
-Not yet published.
+This repository isn't published. It exists as a template repository for you to use, populate with SVGs, and maintain an Icon library!
 
 ## Usage
+
+If you use this template repository, please ensure that the `.browserslistrc` and `svgo.config.js` match defaults that make you and/or your company happy.
 
 ### Importing
 
@@ -34,7 +36,7 @@ import { Alert } from 'svg-icons';
   - `fill="currentColor"`
   - `aria-hidden="true"`
 - Ensure that the `svg` includes a `title` element as the first child of the `svg` element.
-  - It's content should be a human-readible description of the SVG (this is for accessibility)
+  - Its content should be a human-readible description of the SVG (this is for accessibility)
 - Put it into `src/svgs`
 
 ### Considerations
