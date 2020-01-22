@@ -8,7 +8,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import sourceMaps from 'rollup-plugin-sourcemaps';
 import { insertIf } from '@innocuous/functions';
 
-const svgoConfig = require('./svgo.config');
+const svgoConfig = require('./svgo.config.json');
 
 const extensions = ['.js', '.jsx'];
 
