@@ -6,9 +6,22 @@ Little playground to demo a dynamic setup for maintaining iconography as React c
 
 This repository isn't published. It exists as a template repository for you to use, populate with SVGs, and maintain an Icon library!
 
-## Usage
-
 If you use this template repository, please ensure that the `.browserslistrc` and `svgo.config.js` match defaults that make you and/or your company happy.
+
+## Contributing new icons to the library
+
+### Process
+
+- Optimize your icon using `svgo` or with [SVGOMG](https://jakearchibald.github.io/svgomg/). The optimized `svg` should _ONLY_ have the following attributes:
+  - `viewBox="{your coordinates here}"`
+  - `xmlns="http://www.w3.org/2000/svg"`
+  - `fill="currentColor"`
+  - `aria-hidden="true"`
+- Ensure that the `svg` includes a `title` element as the first child of the `svg` element.
+  - Its content should be a human-readible description of the SVG (this is for accessibility)
+- Put it into `src/svgs`
+
+## Usage
 
 ### Importing
 
@@ -25,19 +38,6 @@ import { Alert } from 'svg-icons';
 
 <Alert fill="#FFF" width="20px" height="20px" />
 ```
-
-## Contributing new SVG Icons
-
-### Process
-
-- Optimize your icon using `svgo` or with [SVGOMG](https://jakearchibald.github.io/svgomg/). The optimized `svg` should _ONLY_ have the following attributes:
-  - `viewBox="{your coordinates here}"`
-  - `xmlns="http://www.w3.org/2000/svg"`
-  - `fill="currentColor"`
-  - `aria-hidden="true"`
-- Ensure that the `svg` includes a `title` element as the first child of the `svg` element.
-  - Its content should be a human-readible description of the SVG (this is for accessibility)
-- Put it into `src/svgs`
 
 ### Considerations
 
