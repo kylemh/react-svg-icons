@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "typeRoots": ["node_modules/@types", "./custom.d.ts"]
+  },
+  "exclude": ["node_modules", "./**/*.stories.js", "./**/*.test.js", "./**/*.test.js.snap"],
+  "include": ["./custom.d.ts", "./src"]
+}
