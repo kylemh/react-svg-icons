@@ -10,7 +10,7 @@ import { insertIf } from '@innocuous/functions';
 
 const svgoConfig = require('./svgo.config.json');
 
-const extensions = ['.js', '.jsx'];
+const extensions = ['.js', 'jsx', '.ts', 'tsx'];
 
 // Inspiration for rollup config stems mostly from https://github.com/palmerhq/tsdx
 const generateOutputConfig = ({ format, environment }) => ({
@@ -49,7 +49,7 @@ const generateOutputConfig = ({ format, environment }) => ({
 });
 
 export default {
-  input: 'src/index.js',
+  input: 'src/index.ts',
   output: [
     generateOutputConfig({ format: 'cjs', environment: process.env.BUILD }),
     generateOutputConfig({ format: 'esm', environment: process.env.BUILD }),
@@ -61,7 +61,7 @@ export default {
       mainFields: ['module', 'main', 'browser'],
     }),
     json(),
-    babel(),
+    babel({ extensions }),
     replace({
       'process.env.NODE_ENV': JSON.stringify(process.env.BUILD),
     }),
