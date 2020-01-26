@@ -37,15 +37,27 @@ import { Alert } from 'svg-icons';
 <Alert fill="#FFF" width="20px" height="20px" />
 ```
 
-### Considerations
+### Considerations when deciding if your icon belongs here
 
-1. If you want the icon to express meaning by itself (without text):
+1. If you want the icon to express meaning by itself (without text)...
 
 Please render the SVG inline into your application. Be sure that `aria-hidden="false"` and also apply an `id` to the `<title>` aspect of the SVG. Lastly, give the value of that `id` to the attribute `aria-labelledby` on the actual `<svg>`.
 
 ---
 
-2. If you don't want the icon to be customizable (fill, stroke, etc.) via props
-3. You want the paths of the icon to be controllable in animations
+2. If you don't want the icon to be customizable (fill, stroke, etc.) via props...
+3. If you want the paths of the icon to be controllable in animations...
 
 This repository is for uniformly behaving, customizable icon sets. Please render the SVG inline into your application OR please integrate [react-svg-loader](https://github.com/boopathi/react-svg-loader) into your application, steal [our svgo config](./svgo.config.js), and simply manage the implementation yourself.
+
+---
+
+4. If you want the paths of the icon to be customizeable...
+
+You'll want to make a custom component in your application. Please render the SVG inline into your application OR please integrate [react-svg-loader](https://github.com/boopathi/react-svg-loader) into your application, steal [our svgo config](./svgo.config.js), and simply manage the implementation yourself.
+
+---
+
+5. If the icon has a predefined `fill` attribute on the actual `<svg>`...
+
+Note that `fill` is transformed to be `currentColor`. All you'll need to do is ensure the icon is rendered in a parent element whose CSS property `color` is defined.
