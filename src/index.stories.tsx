@@ -12,40 +12,6 @@ import * as ProductionBundleIconsMap from '../dist/react-svg-icons.esm';
 const iconNames = Object.keys(ProductionBundleIconsMap);
 const icons = Object.values(ProductionBundleIconsMap);
 
-storiesOf('Icons', module).add('All (List View)', () => {
-  return (
-    <div style={{ display: 'flex' }}>
-      {icons.map((Icon, index) => {
-        const iconName = iconNames[index];
-
-        return (
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'flex-start',
-              flexDirection: 'column',
-              margin: '1.25rem',
-            }}
-          >
-            <h6
-              style={{
-                fontSize: '16px',
-                fontFamily: 'sans-serif',
-                margin: '0 0 0.75rem 0',
-                textAlign: 'center',
-              }}
-            >
-              {iconName}
-            </h6>
-            <Icon style={{ height: '100px' }} />
-          </div>
-        );
-      })}
-    </div>
-  );
-});
-
 icons.forEach((Icon, index) => {
   storiesOf('Icons', module)
     .addDecorator(withKnobs)
