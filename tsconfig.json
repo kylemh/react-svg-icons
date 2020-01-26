@@ -1,16 +1,29 @@
 {
+  "include": ["src/index.ts", "@types"],
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
+    "alwaysStrict": true,
+    "baseUrl": "./",
     "declaration": true,
-    "emitDeclarationOnly": true,
     "esModuleInterop": true,
+    "importHelpers": true,
     "jsx": "react",
-    "module": "ESNext",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
     "moduleResolution": "node",
-    "outDir": "dist",
-    "typeRoots": ["node_modules/@types", "./custom.d.ts"]
-  },
-  "exclude": ["node_modules", "./**/*.stories.js", "./**/*.test.js", "./**/*.test.js.snap"],
-  "include": ["./custom.d.ts", "./src"]
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "rootDir": "./",
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "es5",
+    "typeRoots": ["node_modules/@types", "./@types"],
+  }
 }
