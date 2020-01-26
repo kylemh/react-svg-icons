@@ -4,10 +4,10 @@ import { withKnobs, object } from '@storybook/addon-knobs';
 
 /*
  * We don't want to import the src modules lest we need to maintain a development environment via a
- * custom webpack configuration for Storybook. This will more closely emulate the manner with which
- * our consumers will use our components, also.
+ * custom webpack configuration for Storybook. Additionally, this will more closely emulate the
+ * manner with which our consumers will use our components.
  */
-import * as ProductionBundleIconsMap from '../dist/index.production.esm';
+import * as ProductionBundleIconsMap from '../dist/react-svg-icons.esm';
 
 const iconNames = Object.keys(ProductionBundleIconsMap);
 const icons = Object.values(ProductionBundleIconsMap);

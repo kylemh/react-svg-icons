@@ -1,5 +1,10 @@
 {
   "plugins": [
+    {
+      "addAttributesToSVGElement": {
+        "attributes": [{ "fill": "currentColor" }, { "aria-hidden": "true" }]
+      }
+    },
     { "cleanupIDs": true, "params": { "minify": true } },
     { "cleanupListOfValues": true },
     { "convertColors": true },
@@ -10,7 +15,7 @@
     { "moveElemesAttrsToGroup": true },
     {
       "removeAttrs": true,
-      "params": { "attrs": "fill-rule" }
+      "params": { "attrs": ["fill-rule", "fillRule"] }
     },
     { "removeComments": true },
     { "removeDesc": true, "params": { "removeAny": true } },
@@ -27,12 +32,7 @@
     { "removeUselessDefs": true },
     { "removeUselessStrokeAndFill": true },
     { "removeXMLProcInst": true },
-    { "sortAttrs": true },
-    {
-      "addAttributesToSVGElement": {
-        "attribute": "fill=\"currentColor\""
-      }
-    }
+    { "sortAttrs": true }
   ],
   "floatPrecision": 3,
   "multipass": true
