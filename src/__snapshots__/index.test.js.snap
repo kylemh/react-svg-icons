@@ -2,6 +2,7 @@
 
 exports[`svg-icons Alert renders 1`] = `
 <svg
+  aria-hidden="true"
   fill="currentColor"
   viewBox="0 0 24 24"
   xmlns="http://www.w3.org/2000/svg"
@@ -17,6 +18,7 @@ exports[`svg-icons Alert renders 1`] = `
 
 exports[`svg-icons Flag renders 1`] = `
 <svg
+  aria-hidden="true"
   fill="currentColor"
   viewBox="0 0 19 32"
   xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +34,7 @@ exports[`svg-icons Flag renders 1`] = `
 
 exports[`svg-icons Home renders 1`] = `
 <svg
+  aria-hidden="true"
   fill="currentColor"
   viewBox="0 0 29 32"
   xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +50,7 @@ exports[`svg-icons Home renders 1`] = `
 
 exports[`svg-icons MagnifyingGlass renders 1`] = `
 <svg
+  aria-hidden="true"
   fill="currentColor"
   viewBox="0 0 25 32"
   xmlns="http://www.w3.org/2000/svg"
